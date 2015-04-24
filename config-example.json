@@ -1,45 +1,8 @@
 {
     "dbpath" : "data",
     "repos" : {
-        "SomeGitRepo" : {
-            "url" : "https://www.github.com/YourOrganization/RepoOne.git"
-        },
-        "AnotherGitRepo" : {
-            "url" : "https://www.github.com/YourOrganization/RepoOne.git",
-            "ms-between-poll": 10000,
-            "exclude-dot-files": true
-        },
-        "SomeMercurialRepo" : {
-            "url" : "https://www.example.com/foo/hg",
-            "vcs" : "hg"
-        },
-        "Subversion" : {
-            "url" : "http://my-svn.com/repo",
-            "url-pattern" : { 
-                "base-url" : "{url}/{path}{anchor}"
-            },
-            "vcs" : "svn"
-        },
-        "SubversionWithCreds" : {
-            "url" : "http://my-private-svn.com/repo",
-            "url-pattern" : {
-                "base-url" : "{url}/{path}{anchor}"
-            },
-            "vcs" : "svn",
-            "vcs-config" : {
-                "username" : "username_for_ro_account",
-                "password" : "password_for_ro_account"
-            }
-        },
-        "LocalFolder" : {
-            "url" : "file:///absolute/path/to/directory"
-        },
-        "RepoWithCustomUrls" : {
-            "url" : "https://github.com/username/Foo.git",
-            "url-pattern" : {
-                "base-url" : "{url}/files/{path}{anchor}",
-                "anchor" : "#line={line}"
-            }
+        "DjangoGitRepo" : {
+            "url" : "https://github.com/django/django"
         }
     }
 }
